@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import styled from '@emotion/styled'
 import { FaEraser } from 'react-icons/fa'
 
