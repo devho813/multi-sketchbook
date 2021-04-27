@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import styled from '@emotion/styled'
 import { FaEraser } from 'react-icons/fa'
+import { IoRefresh } from 'react-icons/io5'
 
 function Nav() {
   return (
@@ -17,6 +18,9 @@ function Nav() {
         <li>
           <FaEraser />
         </li>
+        <li>
+          <Io5Refresh />
+        </li>
       </ul>
     </NavContainer>
   )
@@ -28,6 +32,7 @@ const NavContainer = styled.nav`
   position: absolute;
   left: 0;
   top: 10%;
+  z-index: 100;
 
   ul {
     padding-left: 15px;
@@ -39,4 +44,7 @@ const NavContainer = styled.nav`
       cursor: pointer;
     }
   }
+`
+const Io5Refresh = styled(IoRefresh)`
+  font-size: 23px;
 `
